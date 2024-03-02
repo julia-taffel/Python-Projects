@@ -6,7 +6,7 @@ gamer_1 = input('Enter your name: ')
 while willing == 'yes':
     answer_1 = input(' %s: Choose rock, scissors or paper: ' % gamer_1)  
     comp_answer = random.choice(answers)
-    print(comp_answer)
+    print('Computer chose: 'comp_answer)
 
     def compare(answer_1, comp_answer):
         if answer_1 == comp_answer:
