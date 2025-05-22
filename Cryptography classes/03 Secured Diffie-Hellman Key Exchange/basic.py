@@ -1,8 +1,9 @@
 from secrets import randbelow
 from Crypto.Util.number import getPrime
+import random
 
 p = getPrime(2048)
-g = 2
+g = random.randint(2, 100)
 print("Prime p: ", p)
 print("Prime g: ", g)
 
