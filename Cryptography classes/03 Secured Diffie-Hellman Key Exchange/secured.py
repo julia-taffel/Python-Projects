@@ -3,9 +3,10 @@ from Crypto.Util.number import getPrime
 from Crypto.PublicKey import RSA
 from Crypto.Signature import pkcs1_15
 from Crypto.Hash import SHA256
+import random
 
 p = getPrime(2048)
-g = 2
+g = random.randint(2, 100)
 print("Prime p: ", p)
 print("Prime g: ", g)
 
